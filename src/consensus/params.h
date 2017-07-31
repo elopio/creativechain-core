@@ -49,8 +49,8 @@ struct Params {
 
     /** Block height at which DigiShield becomes active */
     int DigiShieldHeight;
-    int64_t nPowTargetTimespanDigiShield;
     int64_t nPowTargetSpacingDigiShield;
+    int32_t nMinerConfirmationWindowDigiShield;
 
 
     /**
