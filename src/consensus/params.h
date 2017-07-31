@@ -49,6 +49,9 @@ struct Params {
 
     /** Block height at which DigiShield becomes active */
     int DigiShieldHeight;
+    int64_t nPowTargetTimespanDigiShield;
+    int64_t nPowTargetSpacingDigiShield;
+
 
     /**
      * Minimum blocks including miner confirmation of the total of 2016 blocks in a retargetting period,

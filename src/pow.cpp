@@ -73,7 +73,7 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
 
     if (height >= params.DigiShieldHeight) {
-        const int64_t retargetTimespan = params.nPowTargetTimespan;
+        const int64_t retargetTimespan = params.nPowTargetTimespanDigiShield;
         const int64_t nActualTimespan = pindexLast->GetBlockTime() - nFirstBlockTime;
         int64_t nModulatedTimespan = nActualTimespan;
         int64_t nMaxTimespan;
